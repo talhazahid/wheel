@@ -246,7 +246,10 @@ input:focus-visible {
   max-width: 980px;
   margin: 0 auto;
   background-color: #1f1340;
-  margin-top: 30px; }
+  margin-top: 30px;
+  border: 1px solid #2e1f5a;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; }
 
 .events-heading {
   background-color: #2e1f5a;
@@ -269,10 +272,7 @@ input:focus-visible {
   width: 100px; }
 
 .events-table {
-  padding: 20px;
-  border: 1px solid #2e1f5a;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; }
+  padding: 20px; }
 
 .table-row {
   font-size: 16px;
@@ -354,7 +354,7 @@ button {
   margin: 50px auto; }
 
 #countdown {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(88, 88, 88, 0.2);
   border: 1px solid #df35b8;
   border-radius: 20px;
   width: 520px;
@@ -584,6 +584,52 @@ button {
   border-radius: 10px;
   align-items: center;
   margin-bottom: 30px; }
+
+.events-wrapper .add-event-cta {
+  margin: 0px 20px 20px; }
+
+.table-event-update-container {
+  display: grid;
+  grid-template-columns: 100px 125px auto auto;
+  grid-gap: 20px;
+  padding: 20px;
+  margin-top: -20px;
+  margin-bottom: 20px; }
+
+.table-event-update-container input {
+  max-width: 285px; }
+
+.pointer {
+  cursor: pointer; }
+
+.custom-upload {
+  display: table; }
+
+.custom-upload__input {
+  height: 0;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute; }
+
+.custom-upload__button {
+  background-color: transparent;
+  color: #a695d6;
+  display: flex;
+  margin-top: 10px; }
+
+.custom-upload__button:hover {
+  color: #a695d6;
+  cursor: pointer; }
+
+.event-title-update-parent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+
+.event-title-update-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; }
 
 :root {
   --mm-ocd-width: 80%;
@@ -1078,6 +1124,58 @@ button {
   .wheel-bg img {
     width: 100%; }
 
+.card {
+  width: 100%;
+  position: relative; }
+
+.card .content {
+  opacity: 0;
+  transition: all ease-in-out 0.15s; }
+  .selected .card .content {
+    transform: translateY(0);
+    opacity: 1; }
+  .collapsed .card .content {
+    display: none; }
+
+@keyframes close-line-one-out {
+  0%,
+ 50% {
+    transform: translateX(0); }
+  75% {
+    transform: translateX(50px); }
+  76% {
+    transform: translateX(50px) translateY(50px); }
+  100% {
+    transform: rotate(45deg); } }
+@keyframes close-line-one-in {
+  0%,
+ 20% {
+    transform: rotate(45deg); }
+  60% {
+    transform: translateX(50px) translateY(50px) rotate(45deg); }
+  61% {
+    transform: translateX(50px); }
+  100% {
+    transform: rotate(0deg); } }
+@keyframes close-line-two-out {
+  0%,
+ 50% {
+    transform: rotate(90deg); }
+  75% {
+    transform: translateY(-50px) rotate(90deg); }
+  76% {
+    transform: translateY(-50px) translateX(50px) rotate(90deg); }
+  100% {
+    transform: rotate(135deg); } }
+@keyframes close-line-two-in {
+  0% {
+    transform: rotate(135deg); }
+  50% {
+    transform: translateY(-50px) translateX(50px) rotate(135deg); }
+  51% {
+    transform: translateY(-50px) rotate(90deg); }
+  100% {
+    transform: rotate(90deg); } }
 @media only screen and (max-width: 1023px) {
   header {
     width: 100%;
@@ -1085,17 +1183,44 @@ button {
     grid-template-columns: 1fr;
     align-items: center; }
 
+  .bg-cover {
+    background-size: cover; }
+
   .header-row {
     align-items: center; }
 
   .deal-wheel {
-    --size: 300px; }
+    --size: 236px; }
 
   .prize {
     font-size: 12px; }
 
+  .starting-soon {
+    font-weight: bold;
+    font-size: 44px;
+    text-align: center;
+    margin-top: 160px; }
+
+  .blur-wheel {
+    background-image: url(../images/blur-wheel.png);
+    height: 400px;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-position: top;
+    margin-top: 0px;
+    background-size: cover; }
+
+  .wheel-wrapper {
+    padding: 110px 0px; }
+
+  .ticker {
+    bottom: -119px;
+    background-size: 66%; }
+
   .login {
-    width: 340px;
+    width: 350px;
     margin: auto;
     display: flex;
     background: #1f1340;
@@ -1105,6 +1230,18 @@ button {
     border-radius: 10px;
     padding-bottom: 20px;
     margin-top: 40px; }
+
+  .wheel-bg {
+    position: absolute;
+    transform: scale(1.6); }
+
+  .table-row-customers {
+    grid-template-columns: 100px 153px 300px;
+    padding: 10px 15px 30px; }
+
+  .wheel-wrapper {
+    margin: 15px auto 9px;
+    padding: 110px 0px; }
 
   .login-heading {
     font-size: 32px;
@@ -1133,7 +1270,82 @@ button {
     grid-template-columns: repeat(7, 130px); }
 
   .add-event {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+
+  .free-nft-last-winner {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 350px;
+    grid-gap: 20px;
+    justify-content: center;
+    margin: auto; }
+
+  #countdown {
+    border: 1px solid #df35b8;
+    border-radius: 20px;
+    max-width: 350px;
+    display: flex;
+    margin: auto auto;
+    justify-content: center;
+    width: auto; }
+
+  #countdown li span {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+
+  #countdown ul {
+    gap: 30px;
+    padding: 20px; }
+
+  .modal.open .content {
+    transform: scale(1);
+    max-width: 350px;
+    margin: 0px 20px; }
+
+  .winner-heading {
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: table;
+    margin: 20px auto; }
+
+  .nft-winner-art {
+    border: 5px dashed #ffd200;
+    display: table;
+    margin: auto;
+    max-width: 200px; }
+
+  .the-winner-is {
+    font-size: 32px; }
+
+  .the-winner-is span {
+    font-size: 44px; }
+
+  .winner {
+    background: #231551;
+    padding: 20px;
+    border: 1px solid #8f4bff;
+    border-radius: 20px; }
+
+  .winner-address {
+    background: #2e1f5a;
+    border: 1.37868px solid #948ab2;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 10px;
+    margin-bottom: 25px; }
+
+  .table-event-update-container {
+    display: grid;
+    grid-template-columns: 100px 125px auto auto;
+    grid-gap: 20px;
+    padding: 20px;
+    margin-top: -20px;
+    margin-bottom: 20px; }
+
+  .table-event-update-container input {
+    max-width: 285px; } }
 @media only screen and (min-width: 1024px) {
   #menuToggle {
     display: none; } }

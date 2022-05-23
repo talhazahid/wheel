@@ -274,6 +274,9 @@ input:focus-visible {
  margin: 0 auto;
  background-color: #1f1340;
  margin-top: 30px;
+ border: 1px solid #2e1f5a;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
 }
 
 .events-heading {
@@ -303,9 +306,9 @@ input:focus-visible {
 
 .events-table {
  padding: 20px;
- border: 1px solid #2e1f5a;
- border-bottom-left-radius: 10px;
- border-bottom-right-radius: 10px;
+ // border: 1px solid #2e1f5a;
+ // border-bottom-left-radius: 10px;
+ // border-bottom-right-radius: 10px;
 }
 
 .table-row {
@@ -401,7 +404,7 @@ button {
 }
 
 #countdown {
- background: rgba(255, 255, 255, 0.1);
+ background: rgba(88, 88, 88, 0.2);
  border: 1px solid #df35b8;
  border-radius: 20px;
  width: 520px;
@@ -672,4 +675,59 @@ button {
  border-radius: 10px;
  align-items: center;
  margin-bottom: 30px;
+}
+
+.events-wrapper .add-event-cta {
+ margin: 0px 20px 20px;
+}
+
+.table-event-update-container {
+ display: grid;
+ grid-template-columns: 100px 125px auto auto;
+ grid-gap: 20px;
+ padding: 20px;
+ margin-top: -20px;
+ margin-bottom: 20px;
+}
+
+.table-event-update-container {
+ input {
+  max-width: 285px;
+ }
+}
+
+.pointer {
+ cursor: pointer;
+}
+.custom-upload {
+ display: table;
+}
+.custom-upload__input {
+ height: 0;
+ left: -10000px;
+ overflow: hidden;
+ position: absolute;
+}
+
+.custom-upload__button {
+ background-color: transparent;
+ color: #a695d6;
+ display: flex;
+ margin-top: 10px;
+}
+.custom-upload__button:hover {
+ color: #a695d6;
+ cursor: pointer;
+}
+
+.event-title-update-parent {
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+}
+
+.event-title-update-row {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
 }
