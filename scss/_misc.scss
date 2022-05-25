@@ -567,7 +567,7 @@ button {
 
 .card .content {
  opacity: 0;
- transition: all ease-in-out 0.15s;
+ transition: all ease-in-out 0.1s;
 
  .selected & {
   transform: translateY(0);
@@ -577,6 +577,22 @@ button {
  .collapsed & {
   display: none;
  }
+}
+
+.selected .content {
+ opacity: 1;
+}
+
+.table-event-update-container {
+ display: grid;
+ grid-template-columns: 100px 125px auto auto;
+ grid-gap: 20px;
+}
+
+.selected .table-event-update-container {
+ padding: 20px;
+ margin-top: -20px;
+ margin-bottom: 20px;
 }
 
 @keyframes close-line-one-out {

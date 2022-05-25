@@ -682,15 +682,6 @@ button {
 }
 
 .table-event-update-container {
- display: grid;
- grid-template-columns: 100px 125px auto auto;
- grid-gap: 20px;
- padding: 20px;
- margin-top: -20px;
- margin-bottom: 20px;
-}
-
-.table-event-update-container {
  input {
   max-width: 285px;
  }
