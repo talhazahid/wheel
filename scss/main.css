@@ -588,14 +588,6 @@ button {
 .events-wrapper .add-event-cta {
   margin: 0px 20px 20px; }
 
-.table-event-update-container {
-  display: grid;
-  grid-template-columns: 100px 125px auto auto;
-  grid-gap: 20px;
-  padding: 20px;
-  margin-top: -20px;
-  margin-bottom: 20px; }
-
 .table-event-update-container input {
   max-width: 285px; }
 
@@ -1130,7 +1122,7 @@ button {
 
 .card .content {
   opacity: 0;
-  transition: all ease-in-out 0.15s; }
+  transition: all ease-in-out 0.1s; }
   .selected .card .content {
     transform: translateY(0);
     opacity: 1; }
@@ -1139,6 +1131,16 @@ button {
 
 .selected .content {
   opacity: 1; }
+
+.table-event-update-container {
+  display: grid;
+  grid-template-columns: 100px 125px auto auto;
+  grid-gap: 20px; }
+
+.selected .table-event-update-container {
+  padding: 20px;
+  margin-top: -20px;
+  margin-bottom: 20px; }
 
 @keyframes close-line-one-out {
   0%,
