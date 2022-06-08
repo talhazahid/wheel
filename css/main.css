@@ -1186,10 +1186,11 @@ button {
   margin: auto;
   justify-content: center;
   background-position: center;
-  bottom: -177px;
+  bottom: auto;
   background-size: cover;
   left: 0;
-  right: 0; }
+  right: 0;
+  top: -170px; }
 
 .btn-spin:focus {
   outline-offset: 2px; }
