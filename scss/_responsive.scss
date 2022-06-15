@@ -199,6 +199,22 @@
    max-width: 285px;
   }
  }
+ .primary-cta,
+ .secondary-cta {
+  width: 150px;
+ }
+
+ .kudos {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+ }
+
+ .entry-congrats .regular-modal-font {
+  line-height: 27px;
+  font-size: 18px;
+ }
 }
 
 @media only screen and (min-width: 1024px) {
