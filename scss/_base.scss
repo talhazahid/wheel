@@ -895,3 +895,66 @@ button {
 .entry-congrats .regular-modal-font {
  line-height: 30px;
 }
+
+.events-table-pop {
+ background: #150938;
+ padding: 20px;
+ border-radius: 10px;
+}
+
+.events-table-pop .table-nft-img {
+ display: table;
+ margin: 0 auto;
+}
+.events-table-pop .scrollbar-y {
+ max-height: 400px;
+}
+
+// .events-table-pop .scrollbar {
+//  max-height: 400px;
+// }
+
+.events-table-pop .table-heading {
+ font-size: 16px;
+ color: #da4bff;
+ display: grid;
+ grid-template-columns: 80px 250px 100px;
+ grid-gap: 20px;
+ padding: 10px 15px 30px;
+ align-items: center;
+}
+
+.events-table-pop .table-row {
+ font-size: 16px;
+ color: #fff;
+ display: grid;
+ padding: 10px 15px;
+ grid-template-columns: 80px 250px 100px;
+ grid-gap: 20px;
+ background: #1b103c;
+ border: 1px solid #2e1f5a;
+ border-radius: 10px;
+ align-items: center;
+ margin-bottom: 30px;
+}
+
+.event-pop-cta {
+ display: flex;
+ justify-content: space-around;
+ padding: 20px 0px 0px;
+}
+
+.eventpop-checkbox {
+ background-color: #2e1f5a;
+ height: auto;
+ border-radius: 10px;
+ border: 0px;
+ width: auto;
+ color: #a695d6;
+ display: table;
+ margin: auto;
+}
+
+.center {
+ text-align: center;
+}

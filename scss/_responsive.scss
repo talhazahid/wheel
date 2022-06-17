@@ -215,6 +215,14 @@
   line-height: 27px;
   font-size: 18px;
  }
+
+ .events-table-pop .table-heading {
+  grid-template-columns: 80px 150px 80px;
+ }
+
+ .events-table-pop .table-row {
+  grid-template-columns: 80px 150px 80px;
+ }
 }
 
 @media only screen and (min-width: 1024px) {
