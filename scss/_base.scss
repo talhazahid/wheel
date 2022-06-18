@@ -589,6 +589,7 @@ button {
  border: 4px dashed #da4bff;
  padding: 10px;
  margin-bottom: 20px;
+ text-align: center;
 }
 .nft-winner-art {
  border: 5px dashed #ffd200;
@@ -618,7 +619,7 @@ button {
  background: #2e1f5a;
  border: 1.37868px solid #948ab2;
  border-radius: 10px;
- font-size: 25px;
+ font-size: 17px;
  text-align: center;
  padding: 15px 30px;
  margin-bottom: 25px;
@@ -626,8 +627,9 @@ button {
 
 .winner-actions {
  display: grid;
- grid-template-columns: 1fr 1fr 1fr;
+ grid-template-columns: 200px;
  grid-gap: 20px;
+ justify-content: center;
 
  button {
   width: 100%;

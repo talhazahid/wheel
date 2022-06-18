@@ -232,6 +232,23 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+ .modal.open .content {
+  max-width: 350px;
+  margin: 0px 20px;
+ }
+ .winner {
+  background: #231551;
+  padding: 20px;
+  border: 1px solid #8f4bff;
+  border-radius: 20px;
+ }
+
+ .nft-winner-art {
+  border: 5px dashed #ffd200;
+  display: table;
+  margin: auto;
+  max-width: 200px;
+ }
 }
 
 @media only screen and (max-width: 768px) {
@@ -245,5 +262,25 @@
   button {
    width: 100%;
   }
+ }
+}
+
+@media only screen and (min-width: 1280px) {
+ .modal.open .content {
+  max-width: 350px;
+  margin: 0px 20px;
+ }
+ .winner {
+  background: #231551;
+  padding: 20px;
+  border: 1px solid #8f4bff;
+  border-radius: 20px;
+ }
+
+ .nft-winner-art {
+  border: 5px dashed #ffd200;
+  display: table;
+  margin: auto;
+  max-width: 200px;
  }
 }
