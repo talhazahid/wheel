@@ -45,8 +45,8 @@
  }
 
  .ticker {
-  bottom: -119px;
-  background-size: 66%;
+  top: -140px;
+  background-size: 51%;
  }
 
  .login {
@@ -88,7 +88,7 @@
  }
 
  .events-wrapper {
-  max-width: 980px;
+  max-width: 1080px;
   margin: 0 30px;
   background-color: #1f1340;
   margin-top: 30px;
@@ -222,6 +222,25 @@
 
  .events-table-pop .table-row {
   grid-template-columns: 80px 150px 80px;
+ }
+
+ /***** table-event-update-container ki class*/
+ .add-event-admin-pop-mobile {
+  display: flex;
+  flex-direction: column;
+ }
+
+ /***** Card_card__cUT5B AddEditEvents_modal__61NQZ */
+ .add-event-card-position {
+  max-width: 350px;
+  top: 70px;
+ }
+
+ .add-event-nft-title {
+  margin: 0px 20px;
+  input {
+   width: 100%;
+  }
  }
 }
 

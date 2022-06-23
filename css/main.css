@@ -354,11 +354,12 @@ button {
 
 .scrollbar {
   position: relative; }
-  .scrollbar::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    position: absolute; }
+
+.scrollbar::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute; }
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background: #896ddd !important; }
@@ -398,7 +399,7 @@ button {
     #countdown li:last-child::after {
       display: none; }
     #countdown li span {
-      font-size: 55px;
+      font-size: 40px;
       font-weight: bold;
       margin-bottom: 10px; }
 
@@ -641,10 +642,9 @@ button {
   gap: 10px; }
 
 .player-profile-row {
-  display: grid;
+  display: flex;
   max-width: 520px;
   grid-gap: 20px;
-  grid-template-columns: 1fr 1fr auto;
   justify-content: center;
   margin: 0px auto 30px; }
 
@@ -667,7 +667,8 @@ button {
   text-align: center;
   color: white;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0px; }
 
 button {
   cursor: pointer; }
@@ -1441,8 +1442,8 @@ button {
     padding: 110px 0px; }
 
   .ticker {
-    bottom: -119px;
-    background-size: 66%; }
+    top: -140px;
+    background-size: 51%; }
 
   .login {
     width: 350px;
@@ -1477,7 +1478,7 @@ button {
     background-size: auto; }
 
   .events-wrapper {
-    max-width: 980px;
+    max-width: 1080px;
     margin: 0 30px;
     background-color: #1f1340;
     margin-top: 30px; }
@@ -1590,7 +1591,22 @@ button {
     grid-template-columns: 80px 150px 80px; }
 
   .events-table-pop .table-row {
-    grid-template-columns: 80px 150px 80px; } }
+    grid-template-columns: 80px 150px 80px; }
+
+  /***** table-event-update-container ki class*/
+  .add-event-admin-pop-mobile {
+    display: flex;
+    flex-direction: column; }
+
+  /***** Card_card__cUT5B AddEditEvents_modal__61NQZ */
+  .add-event-card-position {
+    max-width: 350px;
+    top: 70px; }
+
+  .add-event-nft-title {
+    margin: 0px 20px; }
+    .add-event-nft-title input {
+      width: 100%; } }
 @media only screen and (min-width: 1024px) {
   #menuToggle {
     display: none; } }
