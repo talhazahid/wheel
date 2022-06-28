@@ -843,6 +843,13 @@ button {
 .center {
   text-align: center; }
 
+.admin-login-states .admin-logout-hover {
+  display: none; }
+.admin-login-states:hover .admin-logged-in {
+  display: none; }
+.admin-login-states:hover .admin-logout-hover {
+  display: block; }
+
 :root {
   --mm-ocd-width: 80%;
   --mm-ocd-min-width: 200px;
